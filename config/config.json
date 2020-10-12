@@ -1,0 +1,11 @@
+{
+    "TOKEN": "<Your Bot Token>",
+    "DEV_TOKEN": "<Second Bot Token For Dev>",
+    "YOUTUBE_API_KEY": "<YT API KEY>",
+    "SOUNDCLOUD_CLIENT_ID": "<Soundcloud API KEY>",
+    "MAX_PLAYLIST_SIZE": 75,
+    "STABLE_PREFIX": ".." ,
+    "DEV_PREFIX": "~~",
+    "PRUNING": true,
+    "DEV_ID": "<Your Discord ID>"
+  }
