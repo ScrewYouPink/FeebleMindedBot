@@ -84,11 +84,12 @@ if (host == "win32") {
 client.on('message', (message) => {
     if (message.author.bot) return;
     if (message.content.startsWith(PREFIX)) {
+      if (message.content.length <= PREFIX.length) return
         const [CMD_NAME, ...args] = message.content
         .trim()
         .substring(PREFIX.length)
         .split("/\s+/");
-        console.log(CMD_NAME, args);
+        console.log(CMD_NAME, args, message.guild.name, message.channel.name);
     }
 })
 
