@@ -1,12 +1,12 @@
 {
-    "TOKEN": "",
-    "DEV_TOKEN": "I",
-    "YOUTUBE_API_KEY": "",
-    "SOUNDCLOUD_CLIENT_ID": "",
+    "TOKEN": "NzY0NjA3MzYyNzQwNzgxMDg3.X4IuGA.hYZswLXuVQ1LhoPlz81pD-70ipc",
+    "DEV_TOKEN": "NzY0OTM1MzkzNDg0ODY1NjE2.X4NfmQ.Mff9ehszdmPF7zDGMQi8UZMiuaI",
+    "YOUTUBE_API_KEY": "AIzaSyAiw5f3UfvhXaj-4x_IbOp5i6gDvlolSjo",
+    "SOUNDCLOUD_CLIENT_ID": "iqBYgfrzcdzVrGPI9DrZvu7oizhnAGgB",
     "MAX_PLAYLIST_SIZE": 75,
     "STABLE_PREFIX": ".." ,
     "DEV_PREFIX": "~~",
     "PRUNING": true,
-    "DEV_ID": ""
+    "DEV_ID": "753319441890279446"
   }
 
