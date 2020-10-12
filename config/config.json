@@ -1,11 +1,13 @@
 {
-    "TOKEN": "<Your Bot Token>",
-    "DEV_TOKEN": "<Second Bot Token For Dev>",
-    "YOUTUBE_API_KEY": "<YT API KEY>",
-    "SOUNDCLOUD_CLIENT_ID": "<Soundcloud API KEY>",
+    "TOKEN": "NzY0NjA3MzYyNzQwNzgxMDg3.X4IuGA.F0eXATGwEITmoYxQP2uYe3mYuS0",
+    "DEV_TOKEN": "NzY0OTM1MzkzNDg0ODY1NjE2.X4NfmQ.AL9w7g37c9FVaV7cTGodfwCBVQo",
+    "YOUTUBE_API_KEY": "AIzaSyA6WmnjIPGiSewsdsyl5qruNeGZ3UlJ-7Y",
+    "YOUTUBE_API_BACKUP": "AIzaSyAjMIf16H-yEvP4YEyynS3pinutjwIcXdY",
+    "SOUNDCLOUD_CLIENT_ID": "iqBYgfrzcdzVrGPI9DrZvu7oizhnAGgB",
     "MAX_PLAYLIST_SIZE": 75,
-    "STABLE_PREFIX": ".." ,
-    "DEV_PREFIX": "~~",
+    "STABLE_PREFIX": "--" ,
+    "DEV_PREFIX": ">>",
     "PRUNING": true,
-    "DEV_ID": "<Your Discord ID>"
+    "DEV_ID": "753319441890279446",
+    "DEV_ID2": "693518208153681961"
   }
