@@ -4,6 +4,8 @@ module.exports = {
   name: "help",
   aliases: ["h", "commands"],
   description: "This command, duh",
+  type: "UTIL",
+  
   execute(message) {
     let commands = message.client.commands.array();
 

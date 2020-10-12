@@ -3,7 +3,7 @@
 //bringing in things
 const Discord = require('discord.js');
 const { Client, Collection } = require("discord.js");
-const { TOKEN, STABLE_PREFIX, DEV_TOKEN, DEV_ID, DEV_PREFIX } = require("./config/config.json")
+const { TOKEN, STABLE_PREFIX, DEV_TOKEN, DEV_ID, DEV_ID2, DEV_PREFIX } = require("./config/config.json")
 const { readdirSync } = require("fs");
 const { join } = require("path");
 const { CHANGEL, WHATTODO, } = require(`./config/MyVarbs.json`);

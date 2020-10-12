@@ -4,6 +4,7 @@ module.exports = {
     name: 'nuke',
     aliases: ["n"],
     description: 'resets entire channel!',
+    type: 'UTIL',
     execute(message){
         
         if (!message.member.hasPermission('MANAGE_MESSAGES')) return message.channel.send("You don\'t have permissions to do this command")

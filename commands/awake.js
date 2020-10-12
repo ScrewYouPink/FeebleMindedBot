@@ -5,6 +5,7 @@ module.exports = {
     name: 'awake',
     aliases: ["ping", "zzz", "hello"],
     description: 'this is a ping command',
+    type: 'UTIL',
     execute(message){
         message.channel.send("Pinging...").then(m =>{
               var ping = m.createdTimestamp - message.createdTimestamp;
