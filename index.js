@@ -34,6 +34,7 @@ client.prefix = PREFIX;
 client.commands = new Collection();
 client.queue = new Map();
 client.suspend = false;
+client.config = require("./config/client.json")
 
 //getting all the commands, this looks into the filter of files that ends with js to be called.
 const commandFiles = readdirSync(join(__dirname, "commands")).filter((file) => file.endsWith(".js"));
