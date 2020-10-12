@@ -1,15 +1,16 @@
 {
+    "something":"something",
     "guilds":
     [
         {
             "id":"764608008579055626",
-            "log":"true",
+            "log":true,
             "logchannel":"764922682591805470",
             "ownerid":"753319441890279446"
         },
         {
             "id":"753321195398758439",
-            "log":"false",
+            "log":false,
             "logchannel":"",
             "ownerid":"753319441890279446"
         }
