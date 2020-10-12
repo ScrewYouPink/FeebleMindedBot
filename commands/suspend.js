@@ -1,4 +1,4 @@
-const { DEV_ID, DEV_ID2 } = require("../config.json");
+const { DEV_ID, DEV_ID2 } = require("../config/config.json");
 
 module.exports = {
   name: "suspend",

@@ -3,12 +3,12 @@
 //bringing in things
 const Discord = require('discord.js');
 const { Client, Collection } = require("discord.js");
-const { TOKEN, STABLE_PREFIX, DEV_TOKEN, DEV_ID, DEV_PREFIX } = require("./config.json")
+const { TOKEN, STABLE_PREFIX, DEV_TOKEN, DEV_ID, DEV_PREFIX } = require("./config/config.json")
 const client = new Discord.Client();
 const { readdirSync } = require("fs");
 const { join } = require("path");
 const { MessageEmbed } = require("discord.js");
-const { CHANGEL, WHATTODO, } = require(`./MyVarbs.json`);
+const { CHANGEL, WHATTODO, } = require(`./config/MyVarbs.json`);
 var os = require("os");
 var host = os.platform();
 const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
