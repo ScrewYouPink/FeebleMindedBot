@@ -14,7 +14,7 @@ module.exports = {
       .setThumbnail("https://images.emojiterra.com/google/android-oreo/512px/1f528.png")
       .setColor("#fca3b7");
 
-    commands.forEach((cmd) => {
+    commands.forEach((cmd) => { //sorting / classifying
       helpEmbed.addField(
         `**${cmd.type} | ${message.client.prefix}${cmd.name} ${cmd.aliases ? `(${cmd.aliases})` : ""}**`,
         `${cmd.description}`,
@@ -22,6 +22,6 @@ module.exports = {
       );
     });
 
-    return message.author.send(helpEmbed).catch(console.error);
+    return message.author.send(helpEmbed).catch(console.error); //sends it
   }
 };

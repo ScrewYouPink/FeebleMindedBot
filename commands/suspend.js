@@ -6,7 +6,7 @@ module.exports = {
   type: 'DEV',
   execute(message){
     client = message.client;
-    if (message.author.id == DEV_ID || DEV_ID2){
+    if (message.author.id == DEV_ID || DEV_ID2){ //looks for DEV ID of me and anna
         client.suspend = client.suspend ? false : true
         if (client.suspend){return message.channel.send("suspend mode on!")}else {return message.channel.send("suspend mode off!")}
     }
