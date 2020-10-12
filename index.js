@@ -71,7 +71,7 @@ if (host == "win32") {
           .setThumbnail('https://i.imgur.com/sThHYCK.png') // gotta change the picture, might make one :D \ 10/11/2020 done did it
           .addFields(
               { name: '📝Changelog📝', value: `${CHANGEL}`},
-              { name: '📍 Whats next?📍 ', value: `${WHATTODO}`},
+              { name: '💡 Whats next? 💡', value: `${WHATTODO}`},
           )
           .setTimestamp()
           .setFooter('the github: https://github.com/ScrewYouPink/FeebleMindedBot');
@@ -88,8 +88,7 @@ client.on('message', (message) => {
         .trim()
         .substring(PREFIX.length)
         .split("/\s+/");
-        console.log(CMD_NAME);
-        console.log(args);
+        console.log(CMD_NAME, args);
     }
 })
 

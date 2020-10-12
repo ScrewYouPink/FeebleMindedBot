@@ -16,7 +16,7 @@ module.exports = {
 
     commands.forEach((cmd) => {
       helpEmbed.addField(
-        `**${message.client.prefix}${cmd.name} ${cmd.aliases ? `(${cmd.aliases})` : ""}**`,
+        `**${cmd.type} | ${message.client.prefix}${cmd.name} ${cmd.aliases ? `(${cmd.aliases})` : ""}**`,
         `${cmd.description}`,
         true
       );
