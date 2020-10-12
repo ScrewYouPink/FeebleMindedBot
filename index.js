@@ -95,6 +95,7 @@ client.on('message', (message) => {
 //TIME TO LET THE COMMANDS ROAM
 
 client.on("message", async (message) => {
+  if (((client.suspend) && message.author.id == DEV_ID || DEV_ID2) || (!client.suspend)) {
     const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(PREFIX)})\\s*`);
     if (!prefixRegex.test(message.content)) return;
 
@@ -137,5 +138,6 @@ client.on("message", async (message) => {
     console.error(error);
     message.reply("There was a slight issue with your command, the command may not be in use or is being worked, please look at my GitHub: https://github.com/ScrewYouPink/FeebleMindedBot").catch(console.error);  
   }
+}
 }
 );
