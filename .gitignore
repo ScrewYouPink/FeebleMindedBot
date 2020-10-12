@@ -330,7 +330,8 @@ node_modules/ws/lib/websocket.js
 node_modules/ws/LICENSE
 node_modules/ws/package.json
 node_modules/ws/README.md
-config.json
+<<<<<<< HEAD
+
 node_modules/.bin/detect-libc
 node_modules/.bin/detect-libc.cmd
 node_modules/.bin/detect-libc.ps1
@@ -1527,5 +1528,6 @@ node_modules/ytdl-core/package.json
 node_modules/ytdl-core/README.md
 node_modules/ytdl-core/typings/index.d.ts
 config.json
-config.json
-config.json
+=======
+
+>>>>>>> 00fe37b9cc64382cb8bcfbfd6f54ecebb76a36a8
