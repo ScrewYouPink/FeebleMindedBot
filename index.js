@@ -9,13 +9,10 @@ const { readdirSync } = require("fs");
 const { join } = require("path");
 const { MessageEmbed } = require("discord.js");
 const { CHANGEL, WHATTODO, } = require(`./MyVarbs.json`);
-client.prefix = PREFIX;
 var os = require("os");
 var host = os.platform();
-client.commands = new Collection();
 const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const cooldowns = new Collection();
-client.queue = new Map();
 
 //This logins with beta and stable
 if (host == "win32") {
@@ -28,9 +25,14 @@ var ActivitY = "Testing out new features!"
   var PREFIX = STABLE_PREFIX
 }
 
-//DON"T TOUCH!
+//DON'T TOUCH!
 client.login(loginToken)
 //IMPORTANT, it's just loging in lol, but it's needed or else the bot will not log in to the token
+//Client Defs
+client.prefix = PREFIX;
+client.commands = new Collection();
+client.queue = new Map();
+client.suspend = false;
 
 //getting all the commands, this looks into the filter of files that ends with js to be called.
 const commandFiles = readdirSync(join(__dirname, "commands")).filter((file) => file.endsWith(".js"));
