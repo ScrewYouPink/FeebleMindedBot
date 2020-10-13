@@ -22,6 +22,7 @@ module.exports = {
       );
     });
 
-    return message.author.send(helpEmbed).catch(console.error); //sends it
+    return message.author.send(helpEmbed)
+    .catch(() => message.reply("I cannot send message to you!")); //sends it
   }
 };
