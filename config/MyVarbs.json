@@ -1,6 +1,13 @@
 
 {
+<<<<<<< Updated upstream
     "CHANGEL": "📍 Updated alot of shii | 📍 Logging system 2.0 now added | 📍 dynamic logging with log command!",
     "WHATTODO": "Music CMD | Improve help | Timed Nuke system (thats hard af)",
     "LOGO": "https://i.imgur.com/sThHYCK.png"
+=======
+    "CHANGEL": "📍 Orginized commands | 📍 +Music cmds | 📍 made (Ping) to DEV only",
+    "WHATTODO": "Music CMD | Improve help | personality",
+    "LOGO": "https://i.imgur.com/sThHYCK.png",
+    "MAINCOLOR": "#fca3b7"
+>>>>>>> Stashed changes
   }

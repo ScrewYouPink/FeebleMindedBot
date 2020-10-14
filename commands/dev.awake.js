@@ -5,11 +5,12 @@ module.exports = {
     name: 'awake',
     aliases: ["ping", "zzz", "hello"],
     description: 'this is a ping command',
-    type: 'UTIL',
+    type: 'DEV',
     execute(message){
-        message.channel.send("Pinging...").then(m =>{
+        client = message.client;
+        if (message.author.id == DEV_ID || DEV_ID2){ //looks for DEV ID of me and anna
+             message.channel.send("Pinging...").then(m =>{
               var ping = m.createdTimestamp - message.createdTimestamp;
-              var botPing = Math.round(Client.pi);
               
               //this is the final outcome,
               var embed = new MessageEmbed()
@@ -25,4 +26,4 @@ module.exports = {
         }
         )
     }
-}
+}}

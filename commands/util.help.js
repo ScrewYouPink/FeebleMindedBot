@@ -22,7 +22,11 @@ module.exports = {
       );
     });
 
+<<<<<<< Updated upstream:commands/help.js
     return message.author.send(helpEmbed)
     .catch(() => message.reply("I cannot send message to you!")); //sends it
+=======
+    return message.author.send(helpEmbed).catch(console.error); //sends it
+>>>>>>> Stashed changes:commands/util.help.js
   }
 };
