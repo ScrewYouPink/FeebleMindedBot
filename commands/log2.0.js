@@ -1,14 +1,14 @@
 const { MessageEmbed} = require("discord.js");
 const { LOGO } = require(`../config/MyVarbs.json`);
+const fs = require("fs")
+
 
 module.exports = {
-    name: 'log-test',
+    name: 'log',
     description: 'test for new log system!',
-    type: 'DEV',
+    type: 'UTIL',
     execute(message){
 
-
-        const fs = require('fs')
         var data = '';
         var readStream = fs.createReadStream('./config/client.json', 'utf8');
         readStream.on('data', function(chunk) {
@@ -27,6 +27,7 @@ module.exports = {
                 .setColor('#FFAE00')
                 .setDescription(`**TEST** A Test of Log 2.0 happened`)
                     embed.setTimestamp();
+
 
 
                     message.client.channels.cache.get(thisServer.logchannel).send(embed)

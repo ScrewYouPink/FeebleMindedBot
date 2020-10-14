@@ -2,7 +2,7 @@ const fs = require("fs")
 const fileName = './config/client.json'
 
 module.exports = {
-    name: 'log',
+    name: 'setlog',
     description: 'sets the channel of log 2.0',
     type: 'UTIL',
     execute(message, args){
