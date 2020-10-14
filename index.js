@@ -80,20 +80,6 @@ if (host == "win32") {
 }
 
 
-//detecting the perfix / this will be used to logging
-client.on('message', (message) => {
-    if (message.author.bot) return;
-    if (message.content.startsWith(PREFIX)) {
-      if (message.content.length <= PREFIX.length) return
-        const [CMD_NAME, ...args] = message.content
-        .trim()
-        .substring(PREFIX.length)
-        .split("/\s+/");
-        console.log(CMD_NAME, args, message.guild.name, message.channel.name);
-    }
-})
-
-
 //TIME TO LET THE COMMANDS ROAM
 
 client.on("message", async (message) => {
@@ -111,6 +97,15 @@ client.on("message", async (message) => {
     client.commands.find((cmd) => cmd.aliases && cmd.aliases.includes(commandName));
 
   if (!command) return;
+  if (message.author.bot) return;
+  if (message.content.startsWith(PREFIX)) {
+    if (message.content.length <= PREFIX.length) return
+      const [CMD_NAME, ...args] = message.content
+      .trim()
+      .substring(PREFIX.length)
+      .split("/\s+/");
+      console.log(CMD_NAME, args, message.guild.name, message.channel.name);
+  }
 
   if (!cooldowns.has(command.name)) {
     cooldowns.set(command.name, new Collection());

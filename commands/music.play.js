@@ -1,13 +1,13 @@
-const { play } = require("../include/play");
-const { YOUTUBE_API_KEY, SOUNDCLOUD_CLIENT_ID } = require("config.json");
+const { play } = require('../include/play');
+const { YOUTUBE_API_KEY, SOUNDCLOUD_CLIENT_ID } = require('../config/config.json');
 const ytdl = require("ytdl-core");
 const YouTubeAPI = require("simple-youtube-api");
 const youtube = new YouTubeAPI(YOUTUBE_API_KEY);
 const scdl = require("soundcloud-downloader");
 
 module.exports = {
-    name: 'play',
-    aliases: ["p", "play"],
+    name: 'play2',
+    aliases: ["p2", "play2"],
     description: 'plays a chosen song',
     type: 'MUSIC',
 
@@ -134,6 +134,3 @@ module.exports = {
         }
       }
     };
-
-
-

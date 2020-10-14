@@ -17,10 +17,17 @@
   },
   "homepage": "https://github.com/ScrewYouPink/FeebleMindedBot#readme",
   "dependencies": {
-    "discord.js": "^12.3.1",
-    "ffmpeg": "0.0.4",
-    "moment": "^2.29.1",
+    "@discordjs/opus": "^0.3.2",
+    "discord.js": "^12.0.1",
+    "ffmpeg-static": "^4.2.3",
+    "lyrics-finder": "^21.0.5",
     "os": "^0.1.1",
-    "ytdl-core": "^3.3.0"
+    "simple-youtube-api": "^5.1.1",
+    "soundcloud-downloader": "^0.1.6",
+    "string-progressbar": "^1.0.1",
+    "weather-js": "^2.0.0",
+    "yiff": "^2.0.2",
+    "ytdl-core": "^3.1.0",
+    "ytdl-core-discord": "^1.2.1"
   }
 }
